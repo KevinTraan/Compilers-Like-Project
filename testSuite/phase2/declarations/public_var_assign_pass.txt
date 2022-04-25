@@ -1,0 +1,16 @@
+A public variable assigned with an initial value is allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sVar
+   .sIdentifier
+   .sPublic
+   .sInitialValue
+       .sInteger
+   .sExpnEnd
+  .sNullStmt
+  .sEnd

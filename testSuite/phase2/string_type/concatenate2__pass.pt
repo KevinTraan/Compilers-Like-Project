@@ -1,0 +1,6 @@
+using output;
+val a = "There";
+val b = "Hi";
+var x = b | a; 
+x = b | "there";
+x = "hi" | a;

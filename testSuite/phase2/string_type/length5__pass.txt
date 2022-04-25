@@ -1,0 +1,16 @@
+The parentheses have a higher precedence level than length, so the strings are concatenated before the sLength token is emitted.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+        .sStringLiteral
+        .sStringLiteral
+        .sConcatenate
+    .sLength
+.sExpnEnd
+.sEnd

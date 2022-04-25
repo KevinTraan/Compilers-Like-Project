@@ -1,0 +1,15 @@
+Old predefined identifiers should not be recognized.
+
+Expected Result:
+  .pIdentifier
+  % Output token text 'read'
+ .pNewLine
+  .pIdentifier
+  % Output token text 'readln'
+ .pNewLine
+  .pIdentifier
+  % Output token text 'write'
+ .pNewLine
+  .pIdentifier
+  % Output token text 'writeln'
+ .pEndFile

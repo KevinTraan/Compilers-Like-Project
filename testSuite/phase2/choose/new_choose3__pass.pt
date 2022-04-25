@@ -1,0 +1,7 @@
+using output;
+choose i of
+    when 1 then
+        i *= 1;
+    when 2 then
+        i /= 1;
+end;

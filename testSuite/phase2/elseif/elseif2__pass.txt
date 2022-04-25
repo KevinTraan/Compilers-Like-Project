@@ -1,0 +1,31 @@
+This also tests the previously valid if-else clause in PT.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+.sGE
+.sExpnEnd
+.sThen
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sElse
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sEnd

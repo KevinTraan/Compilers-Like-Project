@@ -1,0 +1,4 @@
+using output;
+choose i of
+    when 1 then
+        ;

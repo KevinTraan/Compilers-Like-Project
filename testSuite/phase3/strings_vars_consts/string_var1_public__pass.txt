@@ -1,0 +1,84 @@
+A string variableDeclaration can be decalred public in the Like language
+
+Expected output when run with grep command "./runTests3.sh g":
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   % value emitted 2
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+    oSymbolStkSetPublicFlag
+   .tInitialValue
+     oSymbolStkPush(syExpression)
+      .tSkipString
+      oFixPushForwardBranch
+      oEmitNullAddress
+      % value emitted -32767
+      .tStringData
+      oValuePushStringLength
+      oEmitValue
+      % value emitted 12
+      oValuePop
+      oValuePushCodeAddress
+      oValueNegate
+      oEmitString
+      % value emitted 115
+      % value emitted 116
+      % value emitted 114
+      % value emitted 105
+      % value emitted 110
+      % value emitted 103
+      % value emitted 32
+      % value emitted 118
+      % value emitted 97
+      % value emitted 108
+      % value emitted 117
+      % value emitted 101
+      % value emitted 0
+      oFixPopForwardBranch
+      oTypeStkPush(tpChar)
+      oTypeStkLinkToStandardType(stdChar)
+     .tLiteralAddress
+     oEmitValue
+     % value emitted -16
+     .tFetchChar
+     oValuePop
+   .tInitEnd
+   oSymbolStkPop
+    oSymbolStkSetKind(syVariable)
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreChar
+   oTypeStkPop
+   oSymbolStkPop
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

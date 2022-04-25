@@ -1,0 +1,16 @@
+A publicly declared function with no parameters is allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sParmEnd
+  % .sNewLine
+   .sBegin
+   .sEnd
+  .sEnd

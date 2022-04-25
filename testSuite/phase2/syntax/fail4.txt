@@ -1,0 +1,14 @@
+This is no longer a recognized keyword for division, so div throws a syntax error.
+The following error occurs: scan/parse error, line 2: syntax error at: div.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sInteger
+.sExpnEnd
+.sEnd

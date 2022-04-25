@@ -1,0 +1,11 @@
+Testing 8h from Like Programming Language documentation.
+Null statements are allowed in Like.
+
+Expected output:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sNullStmt
+  .sEnd

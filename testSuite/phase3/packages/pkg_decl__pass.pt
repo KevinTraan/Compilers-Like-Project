@@ -1,0 +1,6 @@
+using output;
+pkg flags is
+  fun counter (x: like 1) is
+    var y = x + 1;
+  end;
+end;

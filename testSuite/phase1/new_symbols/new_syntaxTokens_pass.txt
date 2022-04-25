@@ -1,0 +1,39 @@
+New syntax tokens should be recognized
+slash ("/")
+percent ("%")
+hash ("#")
+bang ("!")
+or bar ("|")
+double or bar ("||")
+plus equals ("+=")
+minus equals ("-=")
+star equals ("*=")
+slash equals ("/=")
+percent equals ("%=")
+double equals ("==")
+
+Expected Result:
+ .pSlash
+ .pNewLine
+ .pPercent
+ .pNewLine
+ .pHash
+ .pNewLine
+ .pBang
+ .pNewLine
+ .pBar
+ .pNewLine
+ .pDoubleBar
+ .pNewLine
+ .pPlusEquals
+ .pNewLine
+ .pMinusEquals
+ .pNewLine
+ .pStarEquals
+ .pNewLine
+ .pSlashEquals
+ .pNewLine
+ .pPercentEquals
+ .pNewLine
+ .pDoubleEquals
+ .pEndFile

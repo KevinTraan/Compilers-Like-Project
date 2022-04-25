@@ -1,0 +1,3 @@
+using output;
+public fun F (var param: like 1, param2: like "a") is
+end;

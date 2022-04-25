@@ -1,0 +1,15 @@
+This tests assigning variables to integer and boolean types using the like keyword.
+
+Expected Output:
+    .data    
+    .comm    u,10
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    movl    $3,n
+    call    pttrap0
+    leave    
+    ret    

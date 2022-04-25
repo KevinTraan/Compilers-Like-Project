@@ -1,0 +1,21 @@
+This test checks that if statements work
+
+Expected output:
+    .data    
+    .comm    u,8
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    movl    $2,u+4
+    movl    $3,n
+    cmpl    $1,u+4
+    jle    f1
+    incl    n
+    movl    $10,u+4
+f1:    movl    $5,n
+    call    pttrap0
+    leave    
+    ret    

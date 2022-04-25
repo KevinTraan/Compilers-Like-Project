@@ -1,0 +1,20 @@
+PT's while___do statement has been changed to a repeat while ... end statement.
+Reuses the original PT WhileStmt to handle
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+   .sWhileStmt
+       .sIdentifier
+       % .sNewLine
+       .sInteger
+    .sLT
+   .sExpnEnd
+    .sBegin
+    % .sNewLine
+    .sNullStmt
+    .sEnd
+  .sEnd

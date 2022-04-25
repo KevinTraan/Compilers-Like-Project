@@ -1,0 +1,21 @@
+Public function declarations with multiple variable parameters in Like typing.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sIdentifier
+   .sVar
+    .sLike
+     .sInteger
+     .sIdentifier
+      .sLike
+      .sIdentifier
+   .sParmEnd
+   .sBegin
+   .sEnd
+  .sEnd

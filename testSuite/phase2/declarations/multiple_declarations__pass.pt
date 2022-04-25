@@ -1,0 +1,5 @@
+using output;
+public val p = 1;
+public var q: like "b";
+val r = p;
+var s = 2;

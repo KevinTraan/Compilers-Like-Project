@@ -1,0 +1,15 @@
+New predefined identifiers should be recognized.
+
+Expected Result:
+  .pIdentifier
+  % Output token text 'get'
+ .pNewLine
+  .pIdentifier
+  % Output token text 'getln'
+ .pNewLine
+  .pIdentifier
+  % Output token text 'put'
+ .pNewLine
+  .pIdentifier
+  % Output token text 'putln'
+ .pEndFile

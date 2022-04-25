@@ -1,0 +1,4 @@
+using output;
+case i of
+    1: i;
+end;

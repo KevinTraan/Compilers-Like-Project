@@ -1,0 +1,10 @@
+using output;
+if x > 1 then
+    ;
+elseif x < 1 then
+    ;
+if x < 3 then
+    ;
+else
+    ;
+end;

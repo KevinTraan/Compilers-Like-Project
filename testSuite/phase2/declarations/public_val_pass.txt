@@ -1,0 +1,13 @@
+Constant values declared public is allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+   .sConst
+   .sIdentifier
+   .sPublic
+    .sInteger
+  .sEnd

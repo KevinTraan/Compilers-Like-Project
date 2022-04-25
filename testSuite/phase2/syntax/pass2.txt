@@ -1,0 +1,12 @@
+This is a valid use of the new like keyword, so this is a valid program.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sLike
+    .sInteger
+.sEnd

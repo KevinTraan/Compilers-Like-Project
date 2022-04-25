@@ -1,0 +1,29 @@
+Multiple functions declared are allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sProcedure
+  .sIdentifier
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sParmEnd
+  % .sNewLine
+   .sBegin
+   .sEnd
+  % .sNewLine
+  .sProcedure
+  .sIdentifier
+   .sIdentifier
+   .sVar
+    .sLike
+     .sStringLiteral
+   .sParmEnd
+  % .sNewLine
+   .sBegin
+   .sEnd
+  .sEnd

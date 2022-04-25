@@ -1,0 +1,15 @@
+Since there is no factor following the pSlash, the pColon is picked up as an invalid next character.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral
+    .sIdentifier
+    .sDivide
+.sExpnEnd
+.sEnd

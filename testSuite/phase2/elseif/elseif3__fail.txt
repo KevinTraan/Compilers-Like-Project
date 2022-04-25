@@ -1,0 +1,24 @@
+Since the declaration/statement within the first if statement is invalid, the else is not emitted.
+Instead, the program is terminated after the if statement.
+The following syntax error is caught at line 4 when the else keyword is given instead of a semicolon: scan/parse error, line 4: syntax error at: else.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+.sEq
+.sExpnEnd
+.sThen
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sEnd

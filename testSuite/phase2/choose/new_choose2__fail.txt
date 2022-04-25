@@ -1,0 +1,18 @@
+Even without the proper use of the "end" keyword in this choose statement block, the way the rules are written in parser.ssl allow for the sEnd token to be emitted.
+However, there is a syntax error caught at line 5 when the file ends, because the expected end keyword is missing: scan/parse error, line 5: unexpected end of file
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+    .sIdentifier
+.sExpnEnd
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sNullStmt
+    .sEnd
+.sCaseEnd
+.sEnd

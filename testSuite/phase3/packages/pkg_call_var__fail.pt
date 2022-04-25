@@ -1,0 +1,5 @@
+using output;
+pkg flags is
+  var temp = 1;
+end;
+temp = 2;

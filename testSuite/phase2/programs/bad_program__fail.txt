@@ -1,0 +1,13 @@
+A valid Like program must start with the keyword "using" followed by one or more identifiers.
+Starting with anything other than this will result in a syntax error.
+
+Running this test results in the error: "scan/parse error, line 1: syntax error at: /" 
+when running ssltrace with -ei, and syntax error recovery is invoked.
+
+Expected output:
+
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+  .sEnd

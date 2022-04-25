@@ -1,0 +1,12 @@
+There is an error on line 2 where the pBar is given: scan/parse error, line 2: syntax error at: |.
+This is because constant declarations cannot allow for string operations (only variable declarations).
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sConst
+.sIdentifier
+.sStringLiteral
+.sEnd

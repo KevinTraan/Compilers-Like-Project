@@ -1,0 +1,23 @@
+The '=' and '<>' for equality and inequality respectively, have been replaced by new tokens.
+They should no longer be recognized, and this is an invalid program.
+The following 2 syntax errors occurs: scan/parse error, line 3: syntax error at: >
+    scan/parse error, line 2: syntax error at: =
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+        .sIdentifier
+.sExpnEnd
+.sVar
+.sIdentifier
+.sInitialValue
+        .sIdentifier
+        .sIdentifier
+    .sLT
+.sExpnEnd
+.sEnd

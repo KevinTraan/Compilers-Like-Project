@@ -1,0 +1,5 @@
+A constant declaration using the like keyword is not allowed
+
+Expected error when run with -ei flag command "./runTests3.sh i":
+@Program
+ scan/parse error, line 2: syntax error at: :

@@ -1,0 +1,4 @@
+using output;
+var x = "hello";
+var y = 1;
+var z = x / y : (y + 2) / y : (y + 1);

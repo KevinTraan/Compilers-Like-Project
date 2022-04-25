@@ -1,0 +1,41 @@
+The else clause is not reached, because the elseif statements are invalid (no semicolon following).
+Therefore, only one sElse is emitted, and we never reach the else.
+The following syntax error is caught because the end keyword is given but a semicolon is expected: scan/parse error, line 6: syntax error at: else
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+.sLT
+.sExpnEnd
+.sThen
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sElse
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+    .sGT
+.sExpnEnd
+.sThen
+    .sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+    .sEnd
+.sEnd
+.sEnd

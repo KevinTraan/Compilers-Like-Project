@@ -1,0 +1,34 @@
+This test checks that choose else statements work
+
+Expected output:
+    .data    
+    .comm    u,16
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    movl    $2,u+4
+    movl    $3,n
+    jmp    f1
+v26:    movl    $3,n
+    movl    $2,u+8
+    jmp    m22
+a22:b2:    movl    $6,n
+    movl    $4,u+12
+    jmp    m22
+f1:    movl    u+4,%eax
+    decl    %eax
+    cmpl    $0,%eax
+    ja    b2
+    shl    $2,%eax
+    movl    c22(%eax),%eax
+    jmp    *%eax
+    .data    
+c22:    .long    v26
+    .text    
+m22:    movl    $8,n
+    call    pttrap0
+    leave    
+    ret    

@@ -1,0 +1,5 @@
+using output;
+var y = 1;
+fun counter is
+  y = y + 1;
+end;

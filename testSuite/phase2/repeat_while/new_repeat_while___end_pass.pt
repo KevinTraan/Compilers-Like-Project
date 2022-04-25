@@ -1,0 +1,4 @@
+using output;
+repeat while x < 5
+    ;
+end;

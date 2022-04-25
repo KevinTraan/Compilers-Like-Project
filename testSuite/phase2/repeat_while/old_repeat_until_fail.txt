@@ -1,0 +1,21 @@
+PT's repeat ... until statement has been changed to a repeat ... while statement with the opposite meaning.
+So the original PT syntax should not work
+This results in the error "     scan/parse error, line 4: syntax error at: x" when running ssltrace with -ei.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  % .sNewLine
+   .sRepeatStmt
+    .sBegin
+    % .sNewLine
+    .sNullStmt
+      .sCallStmt
+      .sIdentifier
+      .sParmEnd
+    .sEnd
+    .sBegin
+    .sEnd

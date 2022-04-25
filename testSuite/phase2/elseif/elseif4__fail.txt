@@ -1,0 +1,33 @@
+Since the declaration/statement within the else statement is invalid.
+However, since we reach the end of an if statement anyway, a valid token stream is emitted.
+The following syntax error is caught because the end keyword is given but a semicolon is expected: scan/parse error, line 6: syntax error at: end
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+.sEq
+.sExpnEnd
+.sThen
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sElse
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sEnd

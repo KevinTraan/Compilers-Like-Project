@@ -1,0 +1,40 @@
+This program includes an if statement within the elseif statement.
+As expected, the second if statement should not be handled as a separate block, but is nested within the elseif block.
+This is treated as a nested if statement block (not 2 separate blocks) so since there is a mismatch of end statements the following syntax error is caught: scan/parse error, line 6: unexpected end of file.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+.sGT
+.sExpnEnd
+.sThen
+.sBegin
+.sNullStmt
+.sEnd
+.sElse
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+    .sGT
+.sExpnEnd
+.sThen
+    .sBegin
+    .sNullStmt
+    .sIfStmt
+        .sIdentifier
+        .sInteger
+    .sLT
+    .sExpnEnd
+    .sThen
+    .sBegin
+    .sNullStmt
+    .sEnd
+    .sEnd
+.sEnd
+.sEnd

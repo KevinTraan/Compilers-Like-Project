@@ -1,0 +1,25 @@
+Strings can be concatenated an unlimited number of times (as long as the length limit is not exceeded).
+This is a valid program.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sConst
+.sIdentifier
+.sStringLiteral
+.sConst
+.sIdentifier
+.sStringLiteral
+.sAssignmentStmt
+.sIdentifier
+    .sIdentifier
+    .sStringLiteral
+    .sConcatenate
+    .sIdentifier
+    .sConcatenate
+    .sStringLiteral
+    .sConcatenate
+.sExpnEnd
+.sEnd

@@ -1,0 +1,18 @@
+The pHash input is valid in a variable declaration.
+The sLength operation should be valid on a constant identifier.
+
+Expected Result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+   .sConst
+   .sIdentifier
+    .sStringLiteral
+  .sVar
+   .sIdentifier
+   .sInitialValue
+        .sIdentifier
+       .sLength
+   .sExpnEnd
+  .sEnd

@@ -1,0 +1,3 @@
+using output;
+var t = "world";
+var x = "hello" / t : 2;

@@ -1,0 +1,19 @@
+Function declarations with incorrectly formatted paramters should result in the error "scan/parse error, line 2: syntax error at: )" when run with ssltrace -ei.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sParmEnd
+   .sBegin
+   .sEnd
+  % .sNewLine
+  .sEnd

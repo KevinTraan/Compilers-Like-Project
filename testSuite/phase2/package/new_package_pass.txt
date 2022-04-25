@@ -1,0 +1,16 @@
+Add parsing for the new Like feature "Packages"
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sPackage
+  .sIdentifier
+  % .sNewLine
+   .sBegin
+   % .sNewLine
+   .sNullStmt
+   .sEnd
+  .sEnd

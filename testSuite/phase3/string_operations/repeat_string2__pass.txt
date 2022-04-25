@@ -1,0 +1,131 @@
+Identifiers can be used as long as the types match the expected order.
+This is a valid program.
+
+Expected Output:
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+   .tInitialValue
+     oSymbolStkPush(syExpression)
+      .tSkipString
+      oFixPushForwardBranch
+      oEmitNullAddress
+      % value emitted -32767
+      .tStringData
+      oValuePushStringLength
+      oEmitValue
+      oValuePop
+      oValuePushCodeAddress
+      oValueNegate
+      oEmitString
+      % value emitted 104
+      % value emitted 101
+      % value emitted 108
+      % value emitted 108
+      % value emitted 111
+      % value emitted 0
+      oFixPopForwardBranch
+      oTypeStkPush(tpChar)
+      oTypeStkLinkToStandardType(stdChar)
+     .tLiteralAddress
+     .tFetchChar
+     oEmitValue
+     oValuePop
+   oSymbolStkPop
+    oSymbolStkSetKind(syVariable)
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreChar
+   oTypeStkPop
+   oSymbolStkPop
+   oSymbolStkPushLocalIdentifier
+   .tInitialValue
+     oValuePushInteger
+     oSymbolStkPush(syExpression)
+     oTypeStkPush(tpInteger)
+     oTypeStkLinkToStandardType(stdInteger)
+     .tLiteralInteger
+     oEmitValue
+     oValuePop
+   oSymbolStkPop
+    oSymbolStkSetKind(syVariable)
+     oAllocateAlignOnWord
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreInteger
+   oTypeStkPop
+   oSymbolStkPop
+   oSymbolStkPushLocalIdentifier
+   .tInitialValue
+     oSymbolStkPushIdentifier
+      .tLiteralAddress
+      oValuePushSymbol
+      oEmitValue
+      oValuePop
+      oTypeStkPushSymbol
+      .tFetchChar
+     oSymbolStkPushIdentifier
+      .tLiteralAddress
+      oValuePushSymbol
+      oEmitValue
+      oValuePop
+      oTypeStkPushSymbol
+      .tFetchInteger
+     .tRepeatString
+     oTypeStkPush(tpChar)
+     oTypeStkSwap
+     oTypeStkPop
+      oTypeStkSwap
+     oTypeStkPop
+     oSymbolStkPop
+     oSymbolStkSetKind(syExpression)
+     oSymbolStkSetKind(syExpression)
+   oSymbolStkPop
+    oTypeTblEnter
+    oSymbolStkSetKind(syVariable)
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreChar
+   oTypeStkPop
+   oSymbolStkPop
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

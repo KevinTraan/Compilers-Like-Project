@@ -1,0 +1,12 @@
+Two strings cannot be successfully concatenated if the sum of their lengths is greater than the limit of 255.
+The following error is emitted at line 2: scan/parse error, line 2: identifier or string too long.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral

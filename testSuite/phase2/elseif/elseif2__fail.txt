@@ -1,0 +1,9 @@
+There cannot be an else that is not following an if statement. Therefore, there is no valid block in this program.
+The following syntax error is caught at line 2 because there is not a valid keyword: scan/parse error, line 2: syntax error at: else.
+
+Expected Result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+  .sEnd

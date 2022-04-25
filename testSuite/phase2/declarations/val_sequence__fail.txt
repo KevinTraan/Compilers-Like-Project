@@ -1,0 +1,20 @@
+Multiple constant variable declarations in sequence, separated by semicolons, are not allowed in Like.
+Although no scan error is detected when running ssltrace with -ei, the statements without the val keyword are recognized as assignment statements.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+   .sConst
+   .sIdentifier
+    .sInteger
+   .sAssignmentStmt
+   .sIdentifier
+       .sInteger
+   .sExpnEnd
+   .sAssignmentStmt
+   .sIdentifier
+       .sInteger
+   .sExpnEnd
+  .sEnd

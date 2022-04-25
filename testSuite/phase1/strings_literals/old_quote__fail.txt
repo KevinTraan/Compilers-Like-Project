@@ -1,0 +1,11 @@
+The old single quote form should fail to be recognized as a string literal.
+
+Expected Result:
+#eIllegalChar
+.pIdentifier
+.pIdentifier
+.pIdentifier
+.pIdentifier
+.pIdentifier
+#eIllegalChar
+.pEndFile

@@ -1,0 +1,32 @@
+Mulitple public function declarations are allowed.
+
+Expected result:
+ % .sNewLine
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sParmEnd
+  % .sNewLine
+   .sBegin
+   .sEnd
+  % .sNewLine
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sIdentifier
+   .sVar
+    .sLike
+     .sStringLiteral
+   .sParmEnd
+  % .sNewLine
+   .sBegin
+   .sEnd
+  .sEnd

@@ -1,0 +1,18 @@
+This tests the precedence level of pDoubleBar and pBar.
+Since this is read left to right, the sConcatenate should be performed after the sRepeatString operation.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral
+    .sInteger
+    .sRepeatString
+    .sStringLiteral
+    .sConcatenate
+.sExpnEnd
+.sEnd

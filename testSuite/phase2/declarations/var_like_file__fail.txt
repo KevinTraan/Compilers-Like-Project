@@ -1,0 +1,15 @@
+A misformated file declaration is not recognized in Like.
+This results in the error "scan/parse error, line 2: syntax error at: ;" when running ssltrace with -ei.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sVar
+   .sIdentifier
+    .sFile
+    .sLike
+    .sIdentifier
+  .sEnd

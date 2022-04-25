@@ -1,0 +1,14 @@
+Constant declarations in PT are not recognized in Like.
+This results in the error "scan/parse error, line 2: syntax error at: a" when running ssltrace with -ei.
+
+Expected result:
+
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+    .sCallStmt
+    .sIdentifier
+    .sParmEnd
+  .sEnd

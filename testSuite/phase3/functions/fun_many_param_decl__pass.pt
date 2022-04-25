@@ -1,0 +1,4 @@
+using output;
+fun counter (x: like 1, var y: like 2) is
+  y = x + 1;
+end;

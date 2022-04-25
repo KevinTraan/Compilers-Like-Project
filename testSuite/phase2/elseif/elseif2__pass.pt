@@ -1,0 +1,6 @@
+using output;
+if x >= 1 then
+    i += 1;
+else
+    i += 2;
+end;

@@ -1,0 +1,13 @@
+The length operation cannot be performed during a constant declaration.
+The following error is emitted at line 2: scan/parse error, line 2: syntax error at: #
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sConst
+.sIdentifier
+scan/parse error, line 2: syntax error at: #
+.sInteger
+.sEnd

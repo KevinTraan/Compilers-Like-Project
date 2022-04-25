@@ -1,0 +1,126 @@
+Strings or char arrays cannot be ordered in Like.
+Error "#eOperandOperatorTypeMismatch" on line 4.
+
+Expected Output:
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+     oValuePushInteger
+     oSymbolStkPush(syExpression)
+     oTypeStkPush(tpInteger)
+     oTypeStkLinkToStandardType(stdInteger)
+     .tLiteralInteger
+     oEmitValue
+     oValuePop
+   oSymbolStkPop
+    oSymbolStkSetKind(syVariable)
+     oAllocateAlignOnWord
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreInteger
+   oTypeStkPop
+   oSymbolStkPop
+   oSymbolStkPushLocalIdentifier
+     oSymbolStkPush(syExpression)
+      .tSkipString
+      oFixPushForwardBranch
+      oEmitNullAddress
+      % value emitted -32767
+      .tStringData
+      oValuePushStringLength
+      oEmitValue
+      oValuePop
+      oValuePushCodeAddress
+      oValueNegate
+      oEmitString
+      % value emitted 119
+      % value emitted 111
+      % value emitted 114
+      % value emitted 108
+      % value emitted 100
+      % value emitted 0
+      oFixPopForwardBranch
+      oTypeStkPush(tpChar)
+      oTypeStkLinkToStandardType(stdChar)
+     .tLiteralAddress
+     .tFetchChar
+     oEmitValue
+     oValuePop
+   oSymbolStkPop
+    oSymbolStkSetKind(syVariable)
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreChar
+   oTypeStkPop
+   oSymbolStkPop
+   oSymbolStkPushLocalIdentifier
+     oSymbolStkPushIdentifier
+      .tLiteralAddress
+      oValuePushSymbol
+      oEmitValue
+      oValuePop
+      oTypeStkPushSymbol
+      .tFetchInteger
+     oSymbolStkPushIdentifier
+      .tLiteralAddress
+      oValuePushSymbol
+      oEmitValue
+      oValuePop
+      oTypeStkPushSymbol
+      .tFetchChar
+     .tLT
+      oTypeStkPop
+      oTypeStkPop
+      oTypeStkPush(tpBoolean)
+      oSymbolStkPop
+      oSymbolStkSetKind(syExpression)
+     oSymbolStkSetKind(syExpression)
+   oSymbolStkPop
+    oTypeTblEnter
+    oSymbolStkSetKind(syVariable)
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreBoolean
+   oTypeStkPop
+   oSymbolStkPop
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

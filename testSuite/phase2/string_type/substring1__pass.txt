@@ -1,0 +1,17 @@
+This is a valid substring operation on a variable declaration. 
+The expected sSubstring token is emitted.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+  .sIdentifier
+  .sInitialValue
+      .sStringLiteral
+        .sInteger
+        .sInteger
+      .sSubstring
+  .sExpnEnd
+.sEnd

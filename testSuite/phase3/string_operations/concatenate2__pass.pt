@@ -1,0 +1,4 @@
+using output;
+var x = "!";
+var y = "hello";
+var z = y | "world" | x;

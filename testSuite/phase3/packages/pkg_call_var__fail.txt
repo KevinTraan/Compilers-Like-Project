@@ -1,0 +1,5 @@
+Calling a non-public variable from a package is not valid.
+
+When running with flags -ei, the following errors are expected:
+#eUndefinedIdentifier
+  semantic error, line 5: identifier not declared

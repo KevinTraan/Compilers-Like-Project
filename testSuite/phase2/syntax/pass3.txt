@@ -1,0 +1,16 @@
+This is a valid way to assign a value to a predefined variable.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sLike
+    .sInteger
+.sAssignmentStmt
+.sIdentifier
+    .sInteger
+.sExpnEnd
+.sEnd

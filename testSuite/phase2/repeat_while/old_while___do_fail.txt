@@ -1,0 +1,11 @@
+PT's while___do statement has been changed to a repeat while ... end statement.
+So the original PT syntax should not work
+This results in the error "scan/parse error, line 2: syntax error at: while" when running ssltrace with -ei.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sEnd

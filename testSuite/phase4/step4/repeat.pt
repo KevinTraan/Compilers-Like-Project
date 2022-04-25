@@ -1,0 +1,5 @@
+using output;
+var x = 1;
+repeat
+    x += 1;
+while x < 5;

@@ -1,0 +1,18 @@
+A substring operation is still valid with a nested divide operation within.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral
+        .sInteger
+        .sInteger
+        .sDivide
+    .sInteger
+    .sSubstring
+.sExpnEnd
+.sEnd

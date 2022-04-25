@@ -1,0 +1,4 @@
+using output;
+var x: like "";
+val y = 3;
+x = "hello" || y;

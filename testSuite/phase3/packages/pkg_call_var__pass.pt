@@ -1,0 +1,5 @@
+using output;
+pkg flags is
+  public var temp = 1;
+end;
+temp = temp + 1;

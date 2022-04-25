@@ -1,0 +1,22 @@
+Function declaration with variable parameters in Like typing.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sProcedure
+  .sIdentifier
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sIdentifier
+   .sVar
+    .sLike
+     .sStringLiteral
+   .sParmEnd
+  % .sNewLine
+   .sBegin
+   .sEnd
+  .sEnd

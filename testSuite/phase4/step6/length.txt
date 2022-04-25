@@ -1,0 +1,30 @@
+This tests assigning a predeclared integer variable to a length operation on another variable.
+
+Expected Output:
+    .data    
+    .comm    u,264
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    movl    $4,n
+    pushl    %eax
+    pushl    %ebx
+    pushl    %ecx
+    pushl    %edx
+    lea    u+4,%eax
+    pushl    %eax
+    call    pttrap105
+    addl    $4,%esp
+    movl    %eax,%esi
+    popl    %edx
+    popl    %ecx
+    popl    %ebx
+    popl    %eax
+    movl    %esi,%eax
+    movl    %eax,u+260
+    call    pttrap0
+    leave    
+    ret    

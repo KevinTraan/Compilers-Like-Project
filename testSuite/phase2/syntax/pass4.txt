@@ -1,0 +1,15 @@
+This is a valid division operation.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sInteger
+    .sInteger
+    .sDivide
+.sExpnEnd
+.sEnd

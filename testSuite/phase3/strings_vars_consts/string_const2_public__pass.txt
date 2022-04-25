@@ -1,0 +1,107 @@
+Multiple public string constantDeclarations can be done on the same line when comma seperated
+
+Expected output when run with grep command "./runTests3.sh g":
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   % value emitted 2
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+   oSymbolStkSetKind(syConstant)
+    oSymbolStkSetPublicFlag
+     .tSkipString
+     oFixPushForwardBranch
+     oEmitNullAddress
+     % value emitted -32767
+     .tStringData
+     oValuePushStringLength
+     oEmitValue
+     % value emitted 12
+     oValuePop
+     oValuePushCodeAddress
+     oValueNegate
+     oEmitString
+     % value emitted 115
+     % value emitted 116
+     % value emitted 114
+     % value emitted 105
+     % value emitted 110
+     % value emitted 103
+     % value emitted 32
+     % value emitted 118
+     % value emitted 97
+     % value emitted 108
+     % value emitted 117
+     % value emitted 101
+     % value emitted 0
+     oFixPopForwardBranch
+     oTypeStkPush(tpChar)
+     oTypeStkLinkToStandardType(stdChar)
+   oSymbolStkEnterTypeReference
+   oTypeStkPop
+   oSymbolStkEnterValue
+   oValuePop
+   oSymbolTblEnter
+   oSymbolStkPop
+   oSymbolStkPushLocalIdentifier
+   oSymbolStkSetKind(syConstant)
+     .tSkipString
+     oFixPushForwardBranch
+     oEmitNullAddress
+     % value emitted -32767
+     .tStringData
+     oValuePushStringLength
+     oEmitValue
+     % value emitted 11
+     oValuePop
+     oValuePushCodeAddress
+     oValueNegate
+     oEmitString
+     % value emitted 104
+     % value emitted 101
+     % value emitted 108
+     % value emitted 108
+     % value emitted 111
+     % value emitted 32
+     % value emitted 119
+     % value emitted 111
+     % value emitted 114
+     % value emitted 108
+     % value emitted 100
+     % value emitted 0
+     oFixPopForwardBranch
+     oTypeStkPush(tpChar)
+     oTypeStkLinkToStandardType(stdChar)
+   oSymbolStkEnterTypeReference
+   oTypeStkPop
+   oSymbolStkEnterValue
+   oValuePop
+   oSymbolTblEnter
+   oSymbolStkPop
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

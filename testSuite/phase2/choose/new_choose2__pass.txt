@@ -1,0 +1,24 @@
+This case alternative should recognize and emit 2 integer tokens in the case alternative.
+The declaration or statement for the alternative is an add-equals expression, where an integer is added to the identifier i, and assigned.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+    .sIdentifier
+.sExpnEnd
+    .sInteger
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+    .sEnd
+.sCaseEnd
+.sEnd

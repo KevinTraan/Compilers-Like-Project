@@ -1,0 +1,4 @@
+using output;
+var x = 4;
+var y = "world";
+var z = (x < y);

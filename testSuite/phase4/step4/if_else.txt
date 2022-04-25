@@ -1,0 +1,24 @@
+This test checks that else statements work
+
+Expected output:
+    .data    
+    .comm    u,8
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    movl    $3,u+4
+    movl    $3,n
+    cmpl    $0,u+4
+    jg    f1
+    incl    n
+    movl    $2,u+4
+    jmp    f2
+f1:    movl    $6,n
+    movl    $4,u+4
+f2:    incl    n
+    call    pttrap0
+    leave    
+    ret    

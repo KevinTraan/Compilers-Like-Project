@@ -1,0 +1,3 @@
+We wanted to give our entire Like compiler a thorough workout, so we took it out on a run this morning.
+We also included all of these example Like programs that will produce complete assembly output files 
+when running "./runTests4.sh s"

@@ -1,0 +1,23 @@
+The addition of the elseif keyword should not change the output of the previously available PT if statement.
+Since this is a valid use of the if keyword, a valid token stream is emitted.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sIfStmt
+    .sIdentifier
+    .sInteger
+.sEq
+.sExpnEnd
+.sThen
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sAdd
+    .sExpnEnd
+.sEnd
+.sEnd

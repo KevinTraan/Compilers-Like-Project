@@ -1,0 +1,14 @@
+The old alternate comment form of (**) should fail.
+
+Expected Result:
+.pLeftParen
+.pStar
+.pIdentifier
+.pIdentifier
+.pIdentifier
+.pNewLine
+.pIdentifier
+.pIdentifier
+.pStar
+.pRightParen
+.pEndFile

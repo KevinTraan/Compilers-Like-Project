@@ -1,0 +1,16 @@
+Since pHash has a higher precedence thatn pBar, the sLength token is emitted after the second string literal is declared and before the sConcatenate token is emitted.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral
+    .sStringLiteral
+    .sLength
+    .sConcatenate
+.sExpnEnd
+.sEnd

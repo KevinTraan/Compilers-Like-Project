@@ -1,0 +1,33 @@
+This test checks that a string initial value declaration produces proper assembly code.
+
+Expected output when running "./runTests4.sh s":
+
+    .data    
+    .comm    u,260
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    .data    
+s16:    .asciz  "test"
+    .text    
+    pushl    %eax
+    pushl    %ebx
+    pushl    %ecx
+    pushl    %edx
+    lea    s16,%eax
+    pushl    %eax
+    lea    u+4,%eax
+    pushl    %eax
+    call    pttrap101
+    addl    $8,%esp
+    popl    %edx
+    popl    %ecx
+    popl    %ebx
+    popl    %eax
+    movl    $2,n
+    call    pttrap0
+    leave    
+    ret    

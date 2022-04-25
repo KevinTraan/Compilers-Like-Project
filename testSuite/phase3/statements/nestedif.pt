@@ -1,0 +1,11 @@
+using output;
+val x = 1;
+if x < 1 then
+    ;
+else
+    if x > 3 then
+        ;
+    else
+        ;
+    end;
+end;

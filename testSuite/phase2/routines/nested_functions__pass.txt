@@ -1,0 +1,20 @@
+Nested public function declarations are allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sParmEnd
+   .sBegin
+   .sProcedure
+   .sIdentifier
+   .sPublic
+    .sParmEnd
+    .sBegin
+    .sEnd
+   .sEnd
+  .sEnd

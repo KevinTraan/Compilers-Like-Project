@@ -1,0 +1,9 @@
+using output;
+choose i of
+    when 1 then
+        ;
+    when 2, 3, 4 then
+        ;
+    else
+        i -= 1;
+end;

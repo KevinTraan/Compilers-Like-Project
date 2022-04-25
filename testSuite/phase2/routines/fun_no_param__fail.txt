@@ -1,0 +1,13 @@
+PT function declarations are not recognized in Like.
+This results in the error "scan/parse error, line 2: syntax error at: bar" when running ssltrace with -ei.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+    .sCallStmt
+    .sIdentifier
+    .sParmEnd
+  .sEnd

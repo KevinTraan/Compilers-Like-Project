@@ -1,0 +1,8 @@
+A variable declared like another variable that is undeclared is an invalid declaration.
+
+Expected error when run with -ei flag command "./runTests3.sh i":
+
+    #eUndefinedIdentifier
+    semantic error, line 2: identifier not declared
+
+when the semantic analyzer gets to the sIdentifier token representing "x".

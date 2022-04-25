@@ -1,0 +1,6 @@
+using output;
+var x = 1;
+choose x of
+    when 1 then
+        var x = 2;
+end;

@@ -1,0 +1,129 @@
+The elseif program and the nestedif program should output identical T-codes.
+The 2 outputs are identical.
+
+Expected Output:
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   % value emitted 2
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+   oSymbolStkSetKind(syConstant)
+    oTypeStkPush(tpInteger)
+    oTypeStkLinkToStandardType(stdInteger)
+    oValuePushInteger
+   oSymbolStkEnterTypeReference
+   oTypeStkPop
+   oSymbolStkEnterValue
+   oValuePop
+   oSymbolTblEnter
+   oSymbolStkPop
+   .tIfBegin
+      oSymbolStkPushIdentifier
+       oTypeStkPushSymbol
+       oValuePushSymbol
+       .tLiteralInteger
+       oEmitValue
+       % value emitted 1
+       oValuePop
+      oValuePushInteger
+      oSymbolStkPush(syExpression)
+      oTypeStkPush(tpInteger)
+      oTypeStkLinkToStandardType(stdInteger)
+      .tLiteralInteger
+      oEmitValue
+      % value emitted 1
+      oValuePop
+      .tLT
+       oTypeStkPop
+       oTypeStkPop
+       oTypeStkPush(tpBoolean)
+       oSymbolStkPop
+       oSymbolStkSetKind(syExpression)
+      oSymbolStkSetKind(syExpression)
+    oSymbolStkPop
+    oTypeStkPop
+   .tIfThen
+   oFixPushForwardBranch
+   oEmitNullAddress
+   % value emitted -32767
+    oSymbolTblPushScope
+    oSymbolTblMergePublicScope
+   .tIfMerge
+   oFixPushForwardBranch
+   oEmitNullAddress
+   % value emitted -32767
+   oFixSwap
+   oFixPopForwardBranch
+    oSymbolTblPushScope
+      .tIfBegin
+         oSymbolStkPushIdentifier
+          oTypeStkPushSymbol
+          oValuePushSymbol
+          .tLiteralInteger
+          oEmitValue
+          % value emitted 1
+          oValuePop
+         oValuePushInteger
+         oSymbolStkPush(syExpression)
+         oTypeStkPush(tpInteger)
+         oTypeStkLinkToStandardType(stdInteger)
+         .tLiteralInteger
+         oEmitValue
+         % value emitted 3
+         oValuePop
+         .tGT
+          oTypeStkPop
+          oTypeStkPop
+          oTypeStkPush(tpBoolean)
+          oSymbolStkPop
+          oSymbolStkSetKind(syExpression)
+         oSymbolStkSetKind(syExpression)
+       oSymbolStkPop
+       oTypeStkPop
+      .tIfThen
+      oFixPushForwardBranch
+      oEmitNullAddress
+      % value emitted -32767
+       oSymbolTblPushScope
+       oSymbolTblMergePublicScope
+      .tIfMerge
+      oFixPushForwardBranch
+      oEmitNullAddress
+      % value emitted -32767
+      oFixSwap
+      oFixPopForwardBranch
+       oSymbolTblPushScope
+       oSymbolTblMergePublicScope
+      .tIfEnd
+      oFixPopForwardBranch
+    oSymbolTblMergePublicScope
+   .tIfEnd
+   oFixPopForwardBranch
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

@@ -1,0 +1,8 @@
+Arrays of files are not supported by Like (or PT Pascal).
+
+Expected error when run with -ei flag command "./runTests3.sh i":
+
+    #eScalarReqd
+    semantic error, line 2: scalar type required
+
+when the semantic analyzer gets to the sFile token.

@@ -1,0 +1,3 @@
+using output;
+val a = "Hi there";
+var y = # a;

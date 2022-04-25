@@ -1,0 +1,8 @@
+using output;
+pkg flags is
+  public fun counter (x: like 1) is
+    var y = x + 1;
+  end;
+end;
+var z = 3;
+counter(z);

@@ -1,0 +1,10 @@
+A syntax error is expected when there is an unexpected end of file.
+
+Running this test results in the error: "scan/parse error, line 1: unexpected end of file"
+when running ssltrace with -ei, and syntax error recovery is invoked.
+
+Expected output:
+
+ .sProgram
+ .sIdentifier
+ .sParmEnd

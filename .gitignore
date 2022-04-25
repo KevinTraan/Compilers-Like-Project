@@ -1,0 +1,10 @@
+bin/*
+lib/pt/*
+cmd/ptc
+*.def
+*.sst
+*.out
+*.o
+*.eOutput
+/.vscode
+*.s

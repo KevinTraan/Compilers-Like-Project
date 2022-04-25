@@ -1,0 +1,9 @@
+using output;
+val x = 1;
+var y: like x;
+choose x of
+    when 1 then
+        y = 2;
+    else
+        y = 3;
+end;

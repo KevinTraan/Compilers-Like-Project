@@ -1,0 +1,38 @@
+This checks assigning a predeclared boolean variable to a string equality expression.
+
+Expected Output:
+    .data    
+    .comm    u,6
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    .data    
+s15:    .asciz  "hello"
+    .text    
+    movl    $4,n
+    .data    
+s32:    .asciz  "hello"
+    .text    
+    pushl    %eax
+    pushl    %ebx
+    pushl    %ecx
+    pushl    %edx
+    lea    s32,%eax
+    pushl    %eax
+    lea    s15,%eax
+    pushl    %eax
+    call    pttrap107
+    addl    $8,%esp
+    movl    %eax,%esi
+    popl    %edx
+    popl    %ecx
+    popl    %ebx
+    popl    %eax
+    movl    %esi,%eax
+    movb    %al,u+4
+    call    pttrap0
+    leave    
+    ret    

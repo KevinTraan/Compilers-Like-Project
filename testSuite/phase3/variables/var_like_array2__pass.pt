@@ -1,0 +1,3 @@
+using output;
+val a = 1;
+var x [10]: like a;

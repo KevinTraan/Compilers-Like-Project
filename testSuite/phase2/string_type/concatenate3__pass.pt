@@ -1,0 +1,4 @@
+using output;
+val x = "Hi";
+val y = "There";
+y = x | "," | y | "!";

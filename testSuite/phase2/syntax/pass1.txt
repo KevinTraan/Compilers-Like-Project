@@ -1,0 +1,22 @@
+These are valid programs for equality and inequality checks.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+        .sIdentifier
+        .sIdentifier
+    .sEq
+.sExpnEnd
+.sVar
+.sIdentifier
+.sInitialValue
+        .sIdentifier
+        .sIdentifier
+    .sNE
+.sExpnEnd
+.sEnd

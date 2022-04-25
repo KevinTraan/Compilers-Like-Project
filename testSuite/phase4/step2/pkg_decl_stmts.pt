@@ -1,0 +1,8 @@
+using output;
+pkg flags is
+  public val x = 1;
+  public var y: like 1;
+  public var z: like "string";
+end;
+y = x;
+z = "test";

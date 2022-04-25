@@ -1,0 +1,16 @@
+Missing Identifier while using package
+This results in the error "scan/parse error, line 2: syntax error at: is" when running ssltrace with -ei.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sPackage
+  .sIdentifier
+   .sBegin
+   .sEnd
+  % .sNewLine
+  % .sNewLine
+  .sEnd

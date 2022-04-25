@@ -1,0 +1,19 @@
+A publicly declared function with correctly formatted parameters should add a public token following the procedure and identifier tokens.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+  .sProcedure
+  .sIdentifier
+  .sPublic
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sIdentifier
+    .sLike
+     .sInteger

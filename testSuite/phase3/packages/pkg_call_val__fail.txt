@@ -1,0 +1,7 @@
+Calling a non-public constant variable in a package is not valid.
+
+When running with flags -ei, the following errors are expected:
+#eUndefinedIdentifier
+  semantic error, line 5: identifier not declared
+#eExpnOperandReqd
+  semantic error, line 5: expression operand required

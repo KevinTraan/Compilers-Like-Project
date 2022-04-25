@@ -1,0 +1,18 @@
+A function with a parameter typed using Like is allowed. 
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sProcedure
+  .sIdentifier
+   .sIdentifier
+    .sLike
+     .sInteger
+   .sParmEnd
+   .sBegin
+   .sEnd
+  % .sNewLine
+  .sEnd

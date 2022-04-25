@@ -1,0 +1,6 @@
+using output;
+fun counter(var y: like 1) is
+    y = 2;
+end;
+var x: like 1;
+counter(x);

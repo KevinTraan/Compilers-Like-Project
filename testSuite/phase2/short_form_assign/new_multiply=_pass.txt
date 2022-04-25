@@ -1,0 +1,16 @@
+Add parsing for new Like short form assignment */
+Outputs the same output stream as the regular assignment to save work during semantic phase
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+   .sAssignmentStmt
+   .sIdentifier
+   .sIdentifier
+       .sInteger
+   .sMultiply
+   .sExpnEnd
+  .sEnd

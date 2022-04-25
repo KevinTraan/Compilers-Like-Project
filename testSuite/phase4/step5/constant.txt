@@ -1,0 +1,19 @@
+This tests declaring a constant string value.
+
+Expected Output:
+    .data    
+    .comm    u,8
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $1,u+0
+    movl    $2,u+4
+    .data    
+s22:    .asciz  "like string"
+    .text    
+    movl    $2,n
+    call    pttrap0
+    leave    
+    ret    

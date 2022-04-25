@@ -1,0 +1,20 @@
+This tests declaring an array of strings.
+
+Expected Output:
+    .data    
+    .comm    u,2572
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    .data    
+s15:    .asciz  "like string"
+    .text    
+    movl    $1,u+4
+    movl    $10,u+8
+    movl    $3,n
+    call    pttrap0
+    leave    
+    ret    

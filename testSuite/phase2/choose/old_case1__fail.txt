@@ -1,0 +1,12 @@
+This tests that the old "case" keyword does not trigger a case statement response. 
+Instead, it is registered as a pIdentifier, and handled in the CallStmt rule.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCallStmt
+.sIdentifier
+.sParmEnd
+.sEnd

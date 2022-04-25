@@ -1,0 +1,18 @@
+One case alternative within the case statement is the minimum requirements to make a valid case statement.
+The declaration or statement for the alternative is a null statement.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+    .sIdentifier
+.sExpnEnd
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sNullStmt
+    .sEnd
+.sCaseEnd
+.sEnd

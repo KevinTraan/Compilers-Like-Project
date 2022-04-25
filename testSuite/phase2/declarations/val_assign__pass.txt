@@ -1,0 +1,12 @@
+A constant variable declared in Like.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+   .sConst
+   .sIdentifier
+    .sInteger
+  .sEnd

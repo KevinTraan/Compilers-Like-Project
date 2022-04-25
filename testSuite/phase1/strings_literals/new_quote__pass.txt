@@ -1,0 +1,5 @@
+The new double quote should be recognized as a string literal.
+
+Expected Result:
+.pStringLiteral
+.pEndFile

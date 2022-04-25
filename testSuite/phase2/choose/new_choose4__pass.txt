@@ -1,0 +1,35 @@
+This final test includes the optional else clause to the case statement. The .sCaseEnd token should be emitted before handling the sCaseElse.
+The declaration or statement for the alternatives are null statements. The case else statement is a short form subtraction assignment statement.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+    .sIdentifier
+.sExpnEnd
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sNullStmt
+    .sEnd
+    .sInteger
+    .sInteger
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sNullStmt
+    .sEnd
+.sCaseEnd
+.sCaseElse
+.sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sSubtract
+    .sExpnEnd
+.sEnd
+.sEnd
+

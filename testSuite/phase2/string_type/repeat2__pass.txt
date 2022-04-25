@@ -1,0 +1,18 @@
+Multiple repeat string are read left to right, and emit two .sRepeatString tokens.
+This is a valid program.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral
+    .sInteger
+    .sRepeatString
+    .sInteger
+    .sRepeatString
+.sExpnEnd
+.sEnd

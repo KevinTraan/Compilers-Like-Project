@@ -1,0 +1,14 @@
+The string is longer than the limit of 255 characters.
+The following error is emitted and the program cannot end: scan/parse error, line 2: identifier or string too long 
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+% .sNewLine
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sStringLiteral
+    .sLength

@@ -1,0 +1,3 @@
+using output;
+val x = "like string";
+var y[10]: like x;

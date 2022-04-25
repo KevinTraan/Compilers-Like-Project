@@ -1,0 +1,15 @@
+This is a valid program that tests the use of '%' to replace the mod keyword.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sInitialValue
+    .sInteger
+    .sInteger
+    .sModulus
+.sExpnEnd
+.sEnd

@@ -1,0 +1,15 @@
+A variable array can be declared.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sVar
+   .sIdentifier
+   .sArray
+    .sInteger
+    .sLike
+     .sInteger
+  .sEnd

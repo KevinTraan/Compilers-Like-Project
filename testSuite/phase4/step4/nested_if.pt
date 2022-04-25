@@ -1,0 +1,7 @@
+using output;
+var x = 5;
+if x > 1 then
+    if x > 3 then
+        x = 0;
+    end;
+end;

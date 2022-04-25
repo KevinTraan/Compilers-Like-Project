@@ -1,0 +1,33 @@
+This case alternative should recognize 2 case alternatives within the case statement.
+The declaration or statement for the alternatives are some short form assignment statements.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+    .sIdentifier
+.sExpnEnd
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sMultiply
+    .sExpnEnd
+    .sEnd
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sAssignmentStmt
+    .sIdentifier
+    .sIdentifier
+        .sInteger
+    .sDivide
+    .sExpnEnd
+    .sEnd
+.sCaseEnd
+.sEnd

@@ -1,0 +1,16 @@
+This is no longer a valid way to assign variables, so the semicolon throws a syntax error.
+The following syntax error occurs: scan/parse error, line 3: syntax error at: :
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sLike
+    .sInteger
+.sCallStmt
+.sIdentifier
+.sParmEnd
+.sEnd

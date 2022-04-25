@@ -1,0 +1,18 @@
+This is the case where no declaration or statement is given in a case alternative.
+After sLabelEnd is emitted, there is no content between the sBegin and sEnd block.
+This is still a valid program.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+    .sIdentifier
+.sExpnEnd
+    .sInteger
+.sLabelEnd
+    .sBegin
+    .sEnd
+.sCaseEnd
+.sEnd

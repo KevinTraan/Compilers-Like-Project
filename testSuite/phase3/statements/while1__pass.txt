@@ -1,0 +1,135 @@
+Variable values can be changed within a while statement block.
+This is a valid program.
+
+Expected Output:
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   % value emitted 2
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+   .tInitialValue
+     oValuePushInteger
+     oSymbolStkPush(syExpression)
+     oTypeStkPush(tpInteger)
+     oTypeStkLinkToStandardType(stdInteger)
+     .tLiteralInteger
+     oEmitValue
+     % value emitted 1
+     oValuePop
+   oSymbolStkPop
+    oSymbolStkSetKind(syVariable)
+     oAllocateAlignOnWord
+     oSymbolStkEnterDataAddress
+     oAllocateVariable
+    oSymbolStkEnterTypeReference
+    oSymbolTblEnter
+   .tLiteralInteger
+   .tLiteralAddress
+    .tStoreInteger
+   oTypeStkPop
+   oSymbolStkPop
+   .tWhileBegin
+   oFixPushTargetAddress
+      oSymbolStkPushIdentifier
+       .tLiteralAddress
+       oValuePushSymbol
+       oEmitValue
+       % value emitted 4
+       oValuePop
+       oTypeStkPushSymbol
+       .tFetchInteger
+      oValuePushInteger
+      oSymbolStkPush(syExpression)
+      oTypeStkPush(tpInteger)
+      oTypeStkLinkToStandardType(stdInteger)
+      .tLiteralInteger
+      oEmitValue
+      % value emitted 5
+      oValuePop
+      .tLT
+       oTypeStkPop
+       oTypeStkPop
+       oTypeStkPush(tpBoolean)
+       oSymbolStkPop
+       oSymbolStkSetKind(syExpression)
+      oSymbolStkSetKind(syExpression)
+    oSymbolStkPop
+    oTypeStkPop
+   .tWhileTest
+   oFixPushForwardBranch
+   oEmitNullAddress
+   % value emitted -32767
+   oFixSwap
+    oSymbolTblPushScope
+      oSymbolStkPushIdentifier
+      .tAssignBegin
+       .tLiteralAddress
+       oValuePushSymbol
+       oEmitValue
+       % value emitted 4
+       oValuePop
+       oTypeStkPushSymbol
+        oSymbolStkPushIdentifier
+         .tLiteralAddress
+         oValuePushSymbol
+         oEmitValue
+         % value emitted 4
+         oValuePop
+         oTypeStkPushSymbol
+         .tFetchInteger
+        oValuePushInteger
+        oSymbolStkPush(syExpression)
+        oTypeStkPush(tpInteger)
+        oTypeStkLinkToStandardType(stdInteger)
+        .tLiteralInteger
+        oEmitValue
+        % value emitted 1
+        oValuePop
+        .tAdd
+        oTypeStkPush(tpInteger)
+          oTypeStkSwap
+         oTypeStkPop
+          oTypeStkSwap
+         oTypeStkPop
+         oSymbolStkPop
+         oSymbolStkSetKind(syExpression)
+        oSymbolStkSetKind(syExpression)
+       oTypeStkSwap
+       .tAssignInteger
+      oTypeStkPop
+      oSymbolStkPop
+      oTypeStkPop
+      oSymbolStkPop
+    oSymbolTblMergePublicScope
+   .tWhileEnd
+   oFixPopTargetAddress
+   % value emitted 20
+   oFixPopForwardBranch
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

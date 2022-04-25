@@ -1,0 +1,13 @@
+This is no longer a valid way to declare variables, so a syntax error is caught where it expects the like keyword.
+The following syntax error occurs: scan/parse error, line 2: syntax error at: integer.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sVar
+.sIdentifier
+.sLike
+    .sInteger
+.sEnd

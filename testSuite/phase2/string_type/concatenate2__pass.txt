@@ -1,0 +1,34 @@
+A val can be concatenated to another val or to a string literal.
+A string can be concatenated to a val. This is a valid program.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sConst
+.sIdentifier
+.sStringLiteral
+.sConst
+.sIdentifier
+.sStringLiteral
+.sVar
+.sIdentifier
+.sInitialValue
+    .sIdentifier
+    .sIdentifier
+    .sConcatenate
+.sExpnEnd
+.sAssignmentStmt
+.sIdentifier
+    .sIdentifier
+    .sStringLiteral
+    .sConcatenate
+.sExpnEnd
+.sAssignmentStmt
+.sIdentifier
+    .sStringLiteral
+    .sIdentifier
+    .sConcatenate
+.sExpnEnd
+.sEnd

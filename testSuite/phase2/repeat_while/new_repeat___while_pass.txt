@@ -1,0 +1,23 @@
+PT's repeat ... until statement has been changed to a repeat ... while statement with the opposite meaning.
+Reuses the original PT RepeatStmt to handle
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  % .sNewLine
+   .sRepeatStmt
+    .sBegin
+    % .sNewLine
+    .sNullStmt
+    .sEnd
+   .sRepeatEnd
+       .sIdentifier
+       .sInteger
+    .sLT
+   .sNot
+   .sExpnEnd
+  .sNullStmt
+  .sEnd

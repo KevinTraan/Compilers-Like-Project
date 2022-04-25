@@ -1,0 +1,13 @@
+A repeat string cannot be declared during constant declarations.
+The following error is caught at line 2: scan/parse error, line 2: syntax error at: |.
+
+Expected Result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+   .sConst
+   .sIdentifier
+    .sStringLiteral
+  .sEnd

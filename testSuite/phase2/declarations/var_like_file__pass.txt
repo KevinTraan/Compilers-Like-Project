@@ -1,0 +1,14 @@
+A variable can be typed as a file.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sVar
+   .sIdentifier
+    .sFile
+    .sLike
+    .sIdentifier
+  .sEnd

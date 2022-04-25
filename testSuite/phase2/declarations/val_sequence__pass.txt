@@ -1,0 +1,18 @@
+Multiple constant variable declarations in sequence, separated by commas, are allowed in Like.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+   .sConst
+   .sIdentifier
+    .sInteger
+    .sConst
+    .sIdentifier
+     .sInteger
+     .sConst
+     .sIdentifier
+      .sInteger
+  .sEnd

@@ -1,0 +1,23 @@
+This test checks that if statements are still working.
+
+Expected output when running "./runTests4.sh s":
+
+    .data    
+    .comm    u,4
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    movl    $3,n
+    movl    $5,n
+    movl    $3,%eax
+    cmpl    $0,%eax
+    jg    f1
+    jmp    f2
+f1:    movl    $8,n
+f2:    incl    n
+    call    pttrap0
+    leave    
+    ret    

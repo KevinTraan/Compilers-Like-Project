@@ -1,0 +1,7 @@
+The new end of line comment // should fail when the comment attempts to flow through to a new line.
+
+Expected Result:
+.pNewLine
+.pIdentifier
+.pIdentifier
+.pEndFile

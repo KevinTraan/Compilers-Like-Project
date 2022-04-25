@@ -1,0 +1,8 @@
+Multiple string constants cannot be declared on the same line in Like (semicolon seperated)
+
+Expected error when run with -ei flag command "./runTests3.sh i":
+#eUndefinedIdentifier
+semantic error, line 2: identifier not declared
+...
+#eTypeMismatch
+semantic error, line 2: type clash

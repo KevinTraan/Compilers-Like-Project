@@ -1,0 +1,45 @@
+This tests declaring and calling a function which changes the value of a parameter passed in by reference.
+
+Expected Output:
+    .data    
+    .comm    u,264
+n:    .long    0
+    .text    
+    .globl    ptmain
+ptmain:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    $2,u+0
+    jmp    f1
+p13:    pushl   %ebp
+        movl    %esp, %ebp    
+    movl    8(%ebp),%eax
+    movl    %eax,u+4
+    movl    $3,n
+    movl    u+4,%eax
+    .data    
+s27:    .asciz  "hello"
+    .text    
+    pushl    %eax
+    pushl    %ebx
+    pushl    %ecx
+    pushl    %edx
+    lea    s27,%ebx
+    pushl    %ebx
+    pushl    %eax
+    call    pttrap101
+    addl    $8,%esp
+    popl    %edx
+    popl    %ecx
+    popl    %ebx
+    popl    %eax
+    leave    
+    ret    
+f1:    movl    $6,n
+    lea    u+8,%eax
+    pushl    %eax
+    call    p13
+    addl    $4,%esp
+    movl    $6,n
+    call    pttrap0
+    leave    
+    ret    

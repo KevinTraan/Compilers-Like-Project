@@ -1,0 +1,21 @@
+These syntax tokens should be not be recognized
+.
+..
+{
+}
+:=
+
+Expected Result:
+ #eIllegalChar
+ .pNewLine
+ #eIllegalChar
+ #eIllegalChar
+ .pNewLine
+ #eIllegalChar
+ .pNewLine
+ #eIllegalChar
+ .pNewLine
+ .pColon
+ .pEquals
+ .pNewLine
+ .pEndFile

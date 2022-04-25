@@ -1,0 +1,9 @@
+There cannot be an elseif that is not following an if statement. Therefore, there is no valid block in this program.
+The following error message is emitted because elseif is not a valid input to the program: scan/parse error, line 2: syntax error at: elseif.
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sEnd

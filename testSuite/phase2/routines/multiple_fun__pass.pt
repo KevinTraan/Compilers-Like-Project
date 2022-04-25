@@ -1,0 +1,5 @@
+using output;
+fun F (param: like 1) is
+end;
+fun G (var param1: like "") is
+end;

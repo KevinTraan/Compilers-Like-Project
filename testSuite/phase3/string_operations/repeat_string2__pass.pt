@@ -1,0 +1,4 @@
+using output;
+var x = "hello";
+var y = 5;
+var z = x || y;

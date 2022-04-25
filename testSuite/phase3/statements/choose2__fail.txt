@@ -1,0 +1,136 @@
+Variables declared inside one case alternative statement cannot be accessed in an else block.
+Error "#eUndefinedIdentifier" on line 7.
+
+Expected Output:
+ oSymbolStkPush(syProcedure)
+ oSymbolTblPushScope
+ oCountPush(three)
+  oSymbolStkPushLocalIdentifier
+  oSymbolStkSetKind(syVariable)
+  oTypeStkPush(tpFile)
+  oTypeStkLinkToStandardType(stdText)
+  oSymbolStkEnterTypeReference
+  oValuePush(two)
+   .tFileDescriptor
+   oAllocateAlignOnWord
+   oSymbolStkEnterDataAddress
+   .tLiteralInteger
+   oEmitValue
+   % value emitted 2
+   .tFileBind
+   .tLiteralAddress
+   oEmitDataAddress
+   % value emitted 0
+   .tStoreInteger
+   oAllocateDescriptor
+  oSymbolTblEnter
+  oSymbolStkPop
+  oTypeStkPop
+  oValuePop
+ oCountPop
+   oSymbolStkPushLocalIdentifier
+   oSymbolStkSetKind(syConstant)
+    oTypeStkPush(tpInteger)
+    oTypeStkLinkToStandardType(stdInteger)
+    oValuePushInteger
+   oSymbolStkEnterTypeReference
+   oTypeStkPop
+   oSymbolStkEnterValue
+   oValuePop
+   oSymbolTblEnter
+   oSymbolStkPop
+   .tCaseBegin
+      oSymbolStkPushIdentifier
+       oTypeStkPushSymbol
+       oValuePushSymbol
+       .tLiteralInteger
+       oEmitValue
+       % value emitted 1
+       oValuePop
+    oSymbolStkPop
+    oTypeStkPop
+   oCasePushDisplay
+   oCountPush(zero)
+   .tCaseSelect
+   oFixPushForwardBranch
+   oEmitNullAddress
+   % value emitted -32767
+    oValuePushInteger
+    oCasePushLabel
+    oValuePop
+     oSymbolTblPushScope
+       oSymbolStkPushLocalIdentifier
+       .tInitialValue
+         oValuePushInteger
+         oSymbolStkPush(syExpression)
+         oTypeStkPush(tpInteger)
+         oTypeStkLinkToStandardType(stdInteger)
+         .tLiteralInteger
+         oEmitValue
+         % value emitted 2
+         oValuePop
+       oSymbolStkPop
+        oSymbolStkSetKind(syVariable)
+         oAllocateAlignOnWord
+         oSymbolStkEnterDataAddress
+         oAllocateVariable
+        oSymbolStkEnterTypeReference
+        oSymbolTblEnter
+       .tLiteralInteger
+       .tLiteralAddress
+        .tStoreInteger
+       oTypeStkPop
+       oSymbolStkPop
+     oSymbolTblMergePublicScope
+    .tCaseMerge
+    oFixPushForwardBranch
+    oEmitNullAddress
+    % value emitted -32767
+    oFixSwap
+    oCountIncrement
+   .tCaseEnd
+   oFixPopForwardBranch
+   oEmitCaseBranchTable
+   % value emitted 1
+   % value emitted 1
+   % value emitted 16
+   .tCaseElse
+    oSymbolTblPushScope
+      oSymbolStkPushIdentifier
+      .tAssignBegin
+       oSymbolStkPop
+        oSymbolStkPush(syVariable)
+        oValuePush(zero)
+        oSymbolStkEnterValue
+        oValuePop
+        oTypeStkPush(tpInteger)
+        oTypeStkLinkToStandardType(stdInteger)
+        oSymbolStkEnterTypeReference
+        oTypeStkPop
+       oTypeStkPushSymbol
+        oValuePushInteger
+        oSymbolStkPush(syExpression)
+        oTypeStkPush(tpInteger)
+        oTypeStkLinkToStandardType(stdInteger)
+        .tLiteralInteger
+        oEmitValue
+        % value emitted 3
+        oValuePop
+       oTypeStkSwap
+       .tAssignInteger
+      oTypeStkPop
+      oSymbolStkPop
+      oTypeStkPop
+      oSymbolStkPop
+    oSymbolTblMergePublicScope
+   .tCaseElseEnd
+   oFixPopForwardBranch
+   oCountDecrement
+   oCasePopDisplay
+   oCountPop
+ oSymbolTblPopScope
+ oSymbolStkPop
+ .tTrapBegin
+ .tTrap
+ oEmitTrapKind(trHalt)
+ % value emitted 0

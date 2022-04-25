@@ -1,0 +1,23 @@
+New keywords should be recognized.
+
+Expected Result:
+  .pIdentifier (screened to pChoose)
+ .pNewLine
+  .pIdentifier (screened to pElseif)
+ .pNewLine
+  .pIdentifier (screened to pFun)
+ .pNewLine
+  .pIdentifier (screened to pIs)
+ .pNewLine
+  .pIdentifier (screened to pLike)
+ .pNewLine
+  .pIdentifier (screened to pPkg)
+ .pNewLine
+  .pIdentifier (screened to pPublic)
+ .pNewLine
+  .pIdentifier (screened to pUsing)
+ .pNewLine
+  .pIdentifier (screened to pVal)
+ .pNewLine
+  .pIdentifier (screened to pWhen)
+ .pEndFile

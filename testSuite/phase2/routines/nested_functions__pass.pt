@@ -1,0 +1,5 @@
+using output;
+public fun F is
+  public fun G is
+  end;
+end;

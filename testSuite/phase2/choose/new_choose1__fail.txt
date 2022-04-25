@@ -1,0 +1,13 @@
+The case where no case alternative is written, the CaseStmt rule is called, but the CaseAlternative rule is never reached. 
+The when keyword is expected where the end keyword is given, so a syntax error is caught at line 3: scan/parse error, line 3: syntax error at: end
+
+Expected Result:
+.sProgram
+.sIdentifier
+.sParmEnd
+.sBegin
+.sCaseStmt
+.sIdentifier
+.sExpnEnd
+.sCaseEnd
+.sEnd

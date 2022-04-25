@@ -1,0 +1,3 @@
+using output;
+var x: like 5;
+var y: like x;

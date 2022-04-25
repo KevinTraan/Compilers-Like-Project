@@ -1,0 +1,25 @@
+Multiple lines of public and nonpublic declarations are allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+   .sConst
+   .sIdentifier
+   .sPublic
+    .sInteger
+  .sVar
+   .sIdentifier
+   .sPublic
+    .sLike
+      .sStringLiteral
+   .sConst
+   .sIdentifier
+    .sIdentifier
+  .sVar
+   .sIdentifier
+   .sInitialValue
+       .sInteger
+   .sExpnEnd
+  .sEnd

@@ -1,0 +1,4 @@
+using output;
+var x: like "";
+var y: like 1;
+y = #x;

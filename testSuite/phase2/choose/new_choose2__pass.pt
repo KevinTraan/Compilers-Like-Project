@@ -1,0 +1,5 @@
+using output;
+choose i of
+    when 1, 2 then
+        i += 1;
+end;

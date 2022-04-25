@@ -1,0 +1,14 @@
+A publicly assigned typed variable is allowed.
+
+Expected result:
+ .sProgram
+ .sIdentifier
+ .sParmEnd
+ % .sNewLine
+  .sBegin
+  .sVar
+   .sIdentifier
+   .sPublic
+    .sLike
+     .sInteger
+  .sEnd

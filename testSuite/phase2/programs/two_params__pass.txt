@@ -1,0 +1,10 @@
+A valid Like program must start with the keyword "using" followed by one or more identifiers.
+
+Expected output:
+
+ .sProgram
+ .sIdentifier
+ .sIdentifier
+ .sParmEnd
+  .sBegin
+  .sEnd

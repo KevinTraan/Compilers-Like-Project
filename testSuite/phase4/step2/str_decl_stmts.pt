@@ -1,0 +1,4 @@
+using output;
+val x = "string";
+var y: like "a";
+y = "new string";
